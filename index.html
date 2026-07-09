@@ -6,6 +6,7 @@
     <title>Drawn by KP</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -13,12 +14,19 @@
     <header>
         <nav>
             <div class="logo-container">
-    <img src="kplogo.jpeg"
+    <img src="./images/kplogo.jpeg"
          alt="Krishna Priya"
          class="logo-image">
 
     <h1 class="logo">Drawn by KP</h1>
 </div>
+<div class="menu-toggle">
+    ☰
+</div>
+
+<button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -34,8 +42,7 @@
 
     <section class="hero">
 
-        <h2>Bringing Imagination to Life Through Art</h2>
-
+<h2 id="typing-text"></h2>
         <p>
             Welcome to my creative space where every sketch tells a story. Just an artist who chooses art over career.
         </p>
@@ -52,11 +59,11 @@
 
         <div class="gallery-container">
 
-            <img src="art1.png.jpeg" alt="Artwork 1">
+            <img src="./images/art1.png.jpeg" alt="Artwork 1">
 
-            <img src="art2.png.jpeg" alt="Artwork 2">
+            <img src="./images/art2.png.jpeg" alt="Artwork 2">
 
-            <img src="art3.png.jpeg" alt="Artwork 3">
+            <img src="./images/art3.png.jpeg" alt="Artwork 3">
 
         </div>
 
@@ -75,12 +82,28 @@
         </a>
 
     </section>
+    <button id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- Image Popup -->
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Artwork">
+
+</div>
 
     <footer>
 
-        <p>©  Drawn by KP | @drawnbykp</p>
+        <p>© 2026 Drawn by KP | @drawnbykp</p>
 
     </footer>
-
+    
+<script src="script.js"></script>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
 </body>
 </html>
