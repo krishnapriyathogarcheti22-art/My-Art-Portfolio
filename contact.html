@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Drawn by KP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
+    
 <body>
 
     <header>
         <nav>
             <div class="logo-container">
-    <img src="kplogo.jpeg"
+    <img src="./images/kplogo.jpeg"
          alt="Krishna Priya"
          class="logo-image">
 
     <h1 class="logo">Drawn by KP</h1>
 </div>
+<div class="menu-toggle">
+    ☰
+</div>
+<button id="theme-toggle" class="theme-toggle">
+     <i class="fas fa-moon"></i>
+</button>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -32,7 +39,7 @@
 
         <h2>Contact Me</h2>
 
-        <form>
+        <form id="contactForm">
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Enter your name" required>
 
@@ -59,7 +66,7 @@
     </a>
 </p>
 
-            <p>📧 Email: priyakpkrishna74@gmail.com.com</p>
+            <p>📧 Email: priyakpkrishna74@gmail.com</p>
         </div>
 
         <div class="map">
@@ -73,10 +80,16 @@
         </div>
 
     </section>
+    <button id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
     <footer>
         <p>© 2026 Drawn by KP | @drawnbykp</p>
     </footer>
-
+<script src="script.js"></script>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
 </body>
 </html>
